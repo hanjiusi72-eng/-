@@ -1,0 +1,11 @@
+node_modules/
+__pycache__/
+test-results/
+
+# Reproducible render intermediates and download bundles
+deliverables/film-build/
+deliverables/raw/
+deliverables/*.zip
+deliverables/*.webm
+deliverables/*.mp4
+deliverables/*.wav

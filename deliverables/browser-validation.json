@@ -1,0 +1,21 @@
+{
+  "passed": [
+    "muted source video loops and renders",
+    "dynamic pause preserves frame",
+    "canvas cell 72 triggers real nonzero Web Audio samples and particles",
+    "particles fully return after three seconds",
+    "held mouse drag plays distinct regions",
+    "grid, playback speed and volume controls update live state",
+    "camera preview starts independently of recognition",
+    "local MediaPipe model and WASM run inference on fake camera frames",
+    "stopping recognition preserves camera preview",
+    "scored creation film plays in page and pauses on close",
+    "no uncaught browser errors",
+    "recognition load failure reports reason and preserves preview",
+    "touchscreen plays and 390px layout has no horizontal overflow"
+  ],
+  "limitations": [
+    "Real physical hand positioning and pinch must still be checked with a real camera; automated inference used the browser fake camera.",
+    "Projection calibration intentionally deferred."
+  ]
+}
