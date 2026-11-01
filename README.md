@@ -60,4 +60,4 @@ python3 tests/browser_smoke.py
 
 静态发布分支为 `gh-pages`，站点根目录为该分支 `/ (root)`。在仓库 Settings → Pages → Build and deployment 中选择 Deploy from a branch、gh-pages、/ (root)，保存。项目使用相对路径，可部署到仓库子路径。
 
-更新流程：提交 main 后执行 `git subtree split --prefix=public main`，将返回的提交推送至 gh-pages。不推送生成的影片中间文件或下载 ZIP。
+更新流程：提交并推送 main 后执行 `bash scripts/deploy-pages.sh`，将 public 的已提交内容发布至 gh-pages，保留既有发布历史。不推送生成的影片中间文件或下载 ZIP。
